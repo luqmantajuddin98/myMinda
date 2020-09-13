@@ -1,0 +1,7 @@
+{
+  "name": "myMinda",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

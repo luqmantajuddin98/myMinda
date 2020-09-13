@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Schedule
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Schedule</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="ion-padding">
+    <ion-item lines="none">
+      <ion-label>Ali</ion-label>
+      <ion-note slot="end">10/10/2020</ion-note>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="ion-padding">
+    <ion-item lines="none">
+      <ion-label>Abu</ion-label>
+      <ion-note slot="end">10/10/2020</ion-note>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="ion-padding">
+    <ion-item lines="none">
+      <ion-label>Ubi</ion-label>
+      <ion-note slot="end">10/10/2020</ion-note>
+    </ion-item>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/psychiatrist/appointment">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

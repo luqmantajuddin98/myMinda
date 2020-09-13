@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="round" routerLink="/psychiatrist/profile">Back</ion-button>
+    </ion-buttons>
+    <ion-title>Signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="ion-padding">
+    <ion-item lines="none">
+      <ion-label position="floating">Patient Name</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="ion-padding">
+    <ion-item lines="none">
+      <ion-label position="floating">Patient Age</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="ion-padding">
+    <ion-item lines="none">
+      <ion-label position="floating">Patient Gender</ion-label>
+      <ion-select [value]="">
+        <ion-select-option value="Male">Male</ion-select-option>
+        <ion-select-option value="Female">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="ion-padding">
+    <ion-item lines="none">
+      <ion-label position="floating">Patient Phone Number</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="ion-padding">
+    <ion-item lines="none">
+      <ion-label position="floating">Patient Username</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="ion-padding">
+    <ion-item lines="none">
+      <ion-label position="floating">Patient Password</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-button class="round" routerLink="/psychiatrist/profile">Save</ion-button>
+
+</ion-content>

@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="round" routerLink="/psychiatrist/schedule">Back</ion-button>
+    </ion-buttons>
+    <ion-title>Appointment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card class="ion-padding">
+    <ion-item lines="none">
+      <ion-label position="floating">Patient Name</ion-label>
+      <ion-select [value]="">
+        <ion-select-option value="Ali">Ali</ion-select-option>
+        <ion-select-option value="Abu">Abu</ion-select-option>
+        <ion-select-option value="Ubi">Ubi</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="ion-padding">
+    <ion-item lines="none">
+      <ion-label position="floating">Time</ion-label>
+          <ion-select [value]="">
+            <ion-select-option value="8">8.00 am</ion-select-option>
+            <ion-select-option value="10">10.00 am</ion-select-option>
+            <ion-select-option value="14">2.00 pm</ion-select-option>
+            <ion-select-option value="16">4.00 pm</ion-select-option>
+          </ion-select>
+
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="ion-padding">
+    <ion-item>
+      <ion-label position="floating">Choose Date</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
+    </ion-item>
+  </ion-card>
+
+  <ion-button class="round" routerLink="/psychiatrist/schedule">Save</ion-button>
+</ion-content>
