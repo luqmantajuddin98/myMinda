@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FBAuth } from 'src/app/services/firebase';
 import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
+import { CloneVisitor } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({
   selector: 'app-signup',
@@ -19,7 +21,8 @@ export class SignupPage implements OnInit {
   }
   constructor(
     private fbauth: FBAuth,
-    private router: Router
+    private router: Router,
+    private toast: ToastController
   ) { }
 
   ngOnInit() {
@@ -28,12 +31,21 @@ export class SignupPage implements OnInit {
   async save(form) {
     try {
       await this.fbauth.register(form);
-      alert("Successfully create user. Login to continue");
+      this.presentToast("Successfully create user. Login to continue");
       //route to login
         this.router.navigate(['/']);
     } catch (e) {
-      alert(e);
+      this.presentToast(e, "danger");
     }
+  }
+
+  async presentToast(text, color = "success") {
+    const toast = await this.toast.create({
+      color: color,
+      message: text,
+      duration: 2000
+    });
+    toast.present();
   }
 
 }

@@ -1,8 +1,11 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title class="def" color = "white">
-      Profile
-    </ion-title>
+    <ion-buttons slot="end">
+        <ion-button class="round" routerLink="" class = "def" ><ion-icon style="font-size: 2em;" name="log-out-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    <ion-title class="def" color = "white" >
+      Profile</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -19,5 +22,5 @@
     <ion-item lines="none">Phone Number: {{user.phone}}</ion-item>
     <ion-item lines="none">Email: {{user.email}}</ion-item>
   </ion-card>
-  <ion-button color="danger"class="round" routerLink="">Logout</ion-button>
+  
 </ion-content>

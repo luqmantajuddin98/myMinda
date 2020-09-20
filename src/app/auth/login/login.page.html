@@ -1,26 +1,18 @@
-<ion-header [translucent]="true" color = "dark">
-  <ion-toolbar>
-    <!-- <ion-title class="def" color = "white">
-      MyMinda
-    </ion-title> -->
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <img src="assets/images/mymindaa.JPG">
-  <ion-list class="au-form" inset padding>
-        <ion-item>
-            <ion-input type="text" placeholder="Email" [(ngModel)]="form.email"></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-input type="password" placeholder="Password" [(ngModel)]="form.password" ></ion-input>
-        </ion-item>
-    </ion-list>
+  <img src="assets/images/mymindaa.JPG" style="margin-top: 15vh">
+  <ion-list class="au-form ion-padding">
+    <ion-item>
+      <ion-input type="text" placeholder="Email" [(ngModel)]="form.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Password" [(ngModel)]="form.password"></ion-input>
+    </ion-item>
+  </ion-list>
 
-    <div class="abc">
-      <ion-button class="round" routerLink="/signup" >Sign Up</ion-button>
-      <ion-button class="round" (click)="login(form)">Login </ion-button>
-    </div>
+  <div class="abc">
+    <ion-button class="round" color="secondary" routerLink="/signup">Sign Up</ion-button>
+    <ion-button class="round" (click)="login(form)">Login </ion-button>
+  </div>
 
 
 </ion-content>
