@@ -10,8 +10,8 @@ import { ToastController } from '@ionic/angular';
 })
 export class Tab1Page {
   form: any = {
-    email: "man@myminda.com",
-    password:"qwerty"
+    email: "",
+    password:""
   }
   constructor(
     private fbauth: FBAuth,
