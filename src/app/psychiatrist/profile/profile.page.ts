@@ -1,12 +1,33 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FBCloudFirestore, FBAuth } from 'src/app/services/firebase';
+
 
 @Component({
   selector: 'app-psychiatrist-profile',
   templateUrl: 'profile.page.html',
   styleUrls: ['profile.page.scss']
 })
-export class Tab3Page {
+export class Tab3Page implements OnInit {
+  user: any= {
+    name: "",
+    age: 0,
+    gender: "",
+    phone: "",
+    email: ""
+  };
+  constructor(
+    private fbcloudfirestore : FBCloudFirestore,
+    private fbauth : FBAuth
+  ) {}
 
-  constructor() {}
+  ngOnInit(): void {
+    this.getAccount();
+  }
+
+  async getAccount(){
+    this.user = await this.fbauth.getAccount();
+    console.log(this.user);
+    
+  }
 
 }

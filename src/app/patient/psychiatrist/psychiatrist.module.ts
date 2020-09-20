@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AppointmentPageRoutingModule } from './appointment-routing.module';
+import { PsychiatristPageRoutingModule } from './psychiatrist-routing.module';
 
-import { AppointmentPage } from './appointment.page';
+import { PsychiatristPage } from './psychiatrist.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AppointmentPageRoutingModule
+    PsychiatristPageRoutingModule
   ],
-  declarations: [AppointmentPage]
+  declarations: [PsychiatristPage]
 })
-export class AppointmentPageModule {}
+export class PsychiatristPageModule {}

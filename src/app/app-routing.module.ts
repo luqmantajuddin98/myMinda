@@ -16,8 +16,16 @@ const routes: Routes = [
   },
   {
     path: 'signup',
-    loadChildren: () => import('./psychiatrist/signup/signup.module').then( m => m.SignupPageModule)
+    loadChildren: () => import('./auth/signup/signup.module').then( m => m.SignupPageModule)
   },
+  {
+    path: 'psychiatrist',
+    loadChildren: () => import('./patient/psychiatrist/psychiatrist.module').then( m => m.PsychiatristPageModule)
+  },
+  {
+    path: 'psychiatrist/patient/:id',
+    loadChildren: () => import('./psychiatrist/result/result.module').then( m => m.ResultPageModule)
+  }
 ];
 @NgModule({
   imports: [

@@ -13,11 +13,11 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card class="ion-padding">
-    <ion-item lines="none">
-      <ion-label>Mind Test</ion-label>
-      <ion-note slot="end">10/10/2020</ion-note>
-    </ion-item>
+  <ion-card class="ion-padding" *ngFor="let mt of mindtest">
+    <ion-card-title><b class="ion-text-center">{{timestamp(mt.timestamp)}}</b></ion-card-title>
+    <ion-item lines="none">Stress: {{stress(mt.stress)}}</ion-item>
+    <ion-item lines="none">Anxiety: {{anxiety(mt.anxiety)}}</ion-item>
+    <ion-item lines="none">Depression: {{depression(mt.depression)}}</ion-item>
   </ion-card>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">

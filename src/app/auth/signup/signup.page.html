@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button class="round" routerLink="/">Back</ion-button>
+          </ion-buttons>
+        <ion-title>Signup</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="ion-padding">
+        <ion-item lines="none">
+            <ion-label position="floating">Name</ion-label>
+            <ion-input [(ngModel)]="form.name"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label position="floating">Age</ion-label>
+            <ion-input [(ngModel)]="form.age"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label position="floating">Gender</ion-label>
+            <ion-select [(ngModel)]="form.gender">
+                <ion-select-option value="Male">Male</ion-select-option>
+                <ion-select-option value="Female">Female</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label position="floating">Phone Number</ion-label>
+            <ion-input [(ngModel)]="form.phone"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label position="floating">Email</ion-label>
+            <ion-input [(ngModel)]="form.email"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password"[(ngModel)]="form.password"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label position="floating">Type</ion-label>
+            <ion-select [(ngModel)]="form.type">
+                <ion-select-option value="patient">Patient</ion-select-option>
+                <ion-select-option value="psychiatrist">Psychiatrist</ion-select-option>
+            </ion-select>
+        </ion-item>
+    </ion-card>
+
+    <ion-button class="round" (click)="save(form)" style="float:right">Save</ion-button>
+
+</ion-content>
+

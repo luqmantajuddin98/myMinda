@@ -14,7 +14,7 @@
       1. I found it hard to wind down
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q1">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -31,7 +31,7 @@
       2. I was aware of dryness of my mouth
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q2">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -48,7 +48,7 @@
       3. I couldn’t seem to experience any positive feeling at all
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q3">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -66,7 +66,7 @@
       exertion)
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q4">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -83,7 +83,7 @@
       5. I found it difficult to work up the initiative to do things
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q5">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -100,7 +100,7 @@
       6. I tended to over-react to situationst
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q6">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -117,7 +117,7 @@
       7. I experienced trembling (e.g. in the hands)
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q7">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -134,7 +134,7 @@
       8. I felt that I was using a lot of nervous energy
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q8">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -151,7 +151,7 @@
       9. I was worried about situations in which I might panic and make a fool of myself
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q9">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -168,7 +168,7 @@
       10. I felt that I had nothing to look forward to
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q10">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -185,7 +185,7 @@
       11. I found myself getting agitated
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q11">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -202,7 +202,7 @@
       12. I found it difficult to relax
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q12">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -219,7 +219,7 @@
       13. I felt down-hearted and blue
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q13">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -237,7 +237,7 @@
       was doing
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q14">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -254,7 +254,7 @@
       15. I felt I was close to panic
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q15">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -271,7 +271,7 @@
       16. I was unable to become enthusiastic about anything
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q16">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -288,7 +288,7 @@
       17. I felt I wasn’t worth much as a person
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q17">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -305,7 +305,7 @@
       18. I felt that I was rather touchy
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q18">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -323,7 +323,7 @@
       exertion (e.g. sense of heart rate increase, heart missing a beat)
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q19">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -340,7 +340,7 @@
       20. I felt scared without any good reason
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q20">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -357,7 +357,7 @@
       21. I felt that life was meaningless
       <ion-note slot="end">
         <ion-item lines="none">
-          <ion-select [value]="['0']">
+          <ion-select [value]="['0']"[(ngModel)]="form.q21">
             <ion-select-option value="0">0</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
@@ -368,6 +368,6 @@
       </ion-note>
     </ion-item>
   </ion-card>
-  <ion-button class="round" routerLink="/patient/mind-test">Save</ion-button>
+  <ion-button class="round" (click)="save(form)" style="float:right">Save</ion-button>
 
 </ion-content>

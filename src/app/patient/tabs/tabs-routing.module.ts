@@ -7,10 +7,7 @@ const routes: Routes = [
     path: '',
     component: TabsPage,
     children: [
-      {
-        path: 'schedule',
-        loadChildren: () => import('../schedule/schedule.module').then(m => m.Tab1PageModule)
-      },
+      
       {
         path: 'mind-test',
         loadChildren: () => import('../mind-test/mind-test.module').then(m => m.Tab3PageModule)
@@ -21,18 +18,22 @@ const routes: Routes = [
       },
       {
         path: 'question',
-        loadChildren: () => import('../question/question.module').then( m => m.QuestionPageModule)
+        loadChildren: () => import('../question/question.module').then(m => m.QuestionPageModule)
+      },
+      {
+        path: 'psychiatrist',
+        loadChildren: () => import('../psychiatrist/psychiatrist.module').then(m => m.PsychiatristPageModule)
       },
       {
         path: '',
-        redirectTo: '/patient/schedule',
+        redirectTo: '/patient/profile',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/patient/schedule',
+    redirectTo: '/patient/mind-test',
     pathMatch: 'full'
   }
 ];
@@ -41,4 +42,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule { }

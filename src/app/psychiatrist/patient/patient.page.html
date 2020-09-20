@@ -12,27 +12,19 @@
       <ion-title size="large">Patient</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-card class="ion-padding">
-    <ion-item routerLink="/psychiatrist/result" lines="none">
-      <ion-label>Ali</ion-label>
-    </ion-item>
+  
+  <ion-card class="ion-padding" *ngFor="let user of users" [routerLink]="'/psychiatrist/patient/' + user.uid">
+    <ion-item lines="none">Name: {{user.name}}</ion-item>
+    <ion-item lines="none">Age: {{user.age}}</ion-item>
+    <ion-item lines="none">Gender: {{user.gender}}</ion-item>
+    <ion-item lines="none">Phone Number: {{user.phone}}</ion-item>
+    <ion-item lines="none">Email: {{user.email}}</ion-item>
   </ion-card>
 
-  <ion-card class="ion-padding">
-    <ion-item routerLink="/psychiatrist/result"lines="none">
-      <ion-label>Abu</ion-label>
-    </ion-item>
-  </ion-card>
-
-  <ion-card class="ion-padding">
-    <ion-item routerLink="/psychiatrist/result" lines="none">
-      <ion-label>Ubi</ion-label>
-    </ion-item>
-  </ion-card>
-
-
-
-
-
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="presentAlertPrompt()">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>

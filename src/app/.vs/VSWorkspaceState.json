@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\auth",
+    "\\auth\\login",
+    "\\auth\\signup",
+    "\\auth\\signup2",
+    "\\patient",
+    "\\patient\\mind-test",
+    "\\psychiatrist\\appointment",
+    "\\psychiatrist\\profile",
+    "\\psychiatrist\\signup"
+  ],
+  "SelectedNode": "\\patient\\mind-test\\mind-test.page.html",
+  "PreviewInSolutionExplorer": false
+}

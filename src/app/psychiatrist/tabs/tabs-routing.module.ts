@@ -7,10 +7,7 @@ const routes: Routes = [
     path: '',
     component: TabsPage,
     children: [
-      {
-        path: 'schedule',
-        loadChildren: () => import('../schedule/schedule.module').then(m => m.Tab1PageModule)
-      },
+
       {
         path: 'patient',
         loadChildren: () => import('../patient/patient.module').then(m => m.Tab2PageModule)
@@ -25,25 +22,17 @@ const routes: Routes = [
         loadChildren: () => import('../result/result.module').then(m => m.ResultPageModule)
         
       },
-      {
-        path: 'appointment',
-        loadChildren: () => import('../appointment/appointment.module').then( m => m.AppointmentPageModule)
-      },
-      {
-        path: 'signup',
-        loadChildren: () => import('../signup/signup.module').then( m => m.SignupPageModule)
-      },
 
       {
         path: '',
-        redirectTo: '/psychiatrist/schedule',
+        redirectTo: '/psychiatrist/profile',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/psychiatrist/schedule',
+    redirectTo: '/psychiatrist/profile',
     pathMatch: 'full'
   }
 ];
